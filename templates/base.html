@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Site</title>
+</head>
+<body>
+    <header>
+        <h1>My Site</h1>
+        <nav>
+            <a href="{% url 'login' %}">Войти</a> |
+            <a href="{% url 'register' %}">Зарегистрироваться</a>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <!-- Footer content here -->
+    </footer>
+</body>
+</html>
